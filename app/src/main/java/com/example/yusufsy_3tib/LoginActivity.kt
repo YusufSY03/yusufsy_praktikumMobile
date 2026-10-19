@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
             Log.e("Hasil", "Umur $umur Password $pass")
             Toast.makeText(this,"Umur $umur Password $pass",Toast.LENGTH_LONG).show()
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, BaseActivity::class.java)
             intent.putExtra("username", user)
             intent.putExtra("password", pass)
             intent.putExtra("umur",21)

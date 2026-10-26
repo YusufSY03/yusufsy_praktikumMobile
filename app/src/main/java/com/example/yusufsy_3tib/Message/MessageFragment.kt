@@ -1,11 +1,19 @@
 package com.example.yusufsy_3tib.Message
 
+import android.content.Intent // BARU
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu // BARU
+import android.view.MenuInflater // BARU
+import android.view.MenuItem // BARU
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.MenuProvider // BARU
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle // BARU
+import com.example.yusufsy_3tib.Message.tutorial.TutorialMessageActivity // BARU
+import com.example.yusufsy_3tib.R
 import com.example.yusufsy_3tib.databinding.FragmentMessageBinding
 
 class MessageFragment : Fragment() {
@@ -39,8 +47,26 @@ class MessageFragment : Fragment() {
         (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
         (requireActivity() as AppCompatActivity).supportActionBar?.title = "Message"
 
+        requireActivity().addMenuProvider(object : MenuProvider {
+
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                menuInflater.inflate(R.menu.message_toolbar_menu, menu)
+            }
+
+            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                return when (menuItem.itemId) {
+                    R.id.action_tutorial -> {
+                        startActivity(Intent(requireContext(), TutorialMessageActivity::class.java))
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+
         val adapter = MessageAdapter(requireContext(), messageList)
         binding.listMessageItems.adapter = adapter
+        setHasOptionsMenu(true)
     }
 
     override fun onDestroyView() {

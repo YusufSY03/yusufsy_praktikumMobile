@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.yusufsy_3tib.Home.pertemuan_5.LimaActivity
-import com.example.yusufsy_3tib.Home.pertemuan_9.NinthActivity // BARU
+import com.example.yusufsy_3tib.Home.pertemuan_9.NinthActivity
 import com.example.yusufsy_3tib.LoginActivity
 import com.example.yusufsy_3tib.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -31,13 +31,7 @@ class HomeFragment : Fragment() {
 
         val sharedPref = requireContext().getSharedPreferences("user_pref", Context.MODE_PRIVATE)
 
-        // Username & password: dari intent kalau ada, kalau tidak dari SharedPreferences
-        val user = requireActivity().intent.getStringExtra("username")
-            ?: sharedPref.getString("username", null)
-        val pass = requireActivity().intent.getStringExtra("password")
-            ?: sharedPref.getString("password", null)
-        if (user != null) binding.txtUsername.text = user
-        if (pass != null) binding.txtPassword.text = pass
+        // DIHAPUS: blok yang mengisi txtUsername dan txtPassword (view-nya sudah tidak ada)
 
         binding.btnSnackBar.setOnClickListener {
             Snackbar.make(binding.root, "Item dihapus", Snackbar.LENGTH_LONG)
@@ -57,7 +51,7 @@ class HomeFragment : Fragment() {
                 .show()
         }
 
-        // DIUBAH: Kembali sekarang logout (finish() di Fragment akan menutup seluruh aplikasi)
+        // Kembali berfungsi sebagai logout (finish() di Fragment akan menutup seluruh aplikasi)
         binding.btnKembali.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
                 .setTitle("Logout")
@@ -77,7 +71,6 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireContext(), LimaActivity::class.java))
         }
 
-        // BARU: buka NinthActivity
         binding.btnToNinth.setOnClickListener {
             startActivity(Intent(requireContext(), NinthActivity::class.java))
         }

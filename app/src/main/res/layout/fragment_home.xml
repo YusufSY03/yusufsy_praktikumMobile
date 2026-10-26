@@ -139,4 +139,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
 
+    <!-- BARU: tombol Pertemuan 9, gaya sama dengan btnToLima, di bawahnya -->
+    <Button
+        android:id="@+id/btnToNinth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4D4748"
+        android:text="Pertemuan 9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToLima" />
+
+    <!-- btnToSixth (Logout) dihapus: penyebab constraint melingkar -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

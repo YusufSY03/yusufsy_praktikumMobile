@@ -28,7 +28,7 @@ class MessageAdapter(
         binding.textSender.text = data.senderName
         binding.textMessage.text = data.messageText
 
-        // Aksi klik tiap item (langkah 4.8)
+
 
         view.setOnClickListener {
 

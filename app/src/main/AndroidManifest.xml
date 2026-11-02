@@ -49,3 +49,75 @@
     </application>
 <!--    android:theme="@style/Theme.//.Splash"-->
 </manifest>
+
+
+<!--    // ==========================================-->
+<!--    // ALUR CONTEKAN PAKET B (RuangKarya)-->
+<!--    // ==========================================-->
+
+<!--    // Langkah 1: Gradle-->
+<!--    // Target: app/build.gradle.kts -> Buka: build.gradle.kts (ambil baris 32 viewBinding dan baris 40 splashscreen)-->
+
+<!--    // Langkah 2: Splash dan Manifest-->
+<!--    // Target: themes.xml -> Buka: values-night/themes.xml (ambil komentar baris 7-11)-->
+<!--    // Target: AndroidManifest.xml -> Buka: AndroidManifest.xml (ambil komentar baris 50)-->
+
+<!--    // Langkah 3: Navigasi Utama-->
+<!--    // Target: activity_main.xml -> Buka: activity_base.xml (salin semua)-->
+<!--    // Target: bottom_nav_menu.xml -> Buka: bottom_nav_menu.xml (ganti ID: studio, ringkasan, informasi)-->
+<!--    // Target: MainActivity.kt -> Buka: BaseActivity.kt (ambil baris 18, 21, 26, 40-67, wajib set selectedItemId = R.id.ringkasan)-->
+
+<!--    // Langkah 4: Data Model Bersama-->
+<!--    // Target: DataStudio.kt -> Buka: MessageModel.kt (contek pola data class dan listOf)-->
+
+<!--    // Langkah 5: Item List dan Adapter-->
+<!--    // Target: item_studio.xml -> Buka: item_message.xml (ambil komentar baris 41-75)-->
+<!--    // Target: StudioAdapter.kt -> Buka: MessageAdapter.kt (ambil komentar baris 57-101)-->
+
+<!--    // Langkah 6: Tab 1 Studio-->
+<!--    // Target: fragment_studio.xml -> Buka: fragment_home.xml (ambil komentar baris 134-159)-->
+<!--    // Target: StudioFragment.kt -> Buka: MessageFragment.kt (ambil komentar baris 78-112)-->
+
+<!--    // Langkah 7: Tab 2 Ringkasan (Tab Awal)-->
+<!--    // Target: fragment_ringkasan.xml -> Buka: fragment_message.xml (ambil komentar baris 33-145)-->
+<!--    // Target: RingkasanFragment.kt -> Buka: HomeFragment.kt (ambil komentar baris 85-136)-->
+
+<!--    // Langkah 8: Tab 3 Informasi-->
+<!--    // Target: fragment_informasi.xml -> Buka: fragment_more.xml (ambil komentar baris 45-116)-->
+<!--    // Target: InformasiFragment.kt -> Buka: MoreFragment.kt (ambil komentar baris 69-111)-->
+
+
+<!--    // ==========================================-->
+<!--    // ALUR CONTEKAN PAKET F (Kopiko)-->
+<!--    // ==========================================-->
+
+<!--    // Langkah 1: Gradle-->
+<!--    // Target: app/build.gradle.kts -> Buka: build.gradle.kts (ambil baris 32 viewBinding dan baris 40 splashscreen)-->
+
+<!--    // Langkah 2: Splash dan Manifest-->
+<!--    // Target: themes.xml -> Buka: values-night/themes.xml (ambil komentar baris 7-11)-->
+<!--    // Target: AndroidManifest.xml -> Buka: AndroidManifest.xml (ambil komentar baris 50)-->
+
+<!--    // Langkah 3: Navigasi Utama-->
+<!--    // Target: activity_main.xml -> Buka: activity_base.xml (salin semua)-->
+<!--    // Target: bottom_nav_menu.xml -> Buka: bottom_nav_menu.xml (ganti ID: menu, promo, tentang)-->
+<!--    // Target: MainActivity.kt -> Buka: BaseActivity.kt (ambil baris 18, 21, 26, 40-67, wajib set selectedItemId = R.id.menu)-->
+
+<!--    // Langkah 4: Data Model Bersama-->
+<!--    // Target: DataKopi.kt -> Buka: MessageModel.kt (ambil komentar baris 8-14)-->
+
+<!--    // Langkah 5: Item List dan Adapter-->
+<!--    // Target: item_menu.xml -> Buka: item_message.xml (ambil komentar baris 41-75 sesuaikan ID)-->
+<!--    // Target: MenuAdapter.kt -> Buka: tutorial/TutorialMessageActivity.kt (ambil komentar baris 42-74)-->
+
+<!--    // Langkah 6: Tab 1 Menu (Tab Awal)-->
+<!--    // Target: fragment_menu.xml -> Buka: fragment_home.xml (ambil komentar baris 134-159)-->
+<!--    // Target: MenuFragment.kt -> Buka: MessageFragment.kt (ambil komentar baris 78-112)-->
+
+<!--    // Langkah 7: Tab 2 Promo-->
+<!--    // Target: fragment_promo.xml -> Buka: fragment_tutorial1.xml (ambil komentar baris 49-140)-->
+<!--    // Target: PromoFragment.kt -> Buka: Home/pertemuan_5/LimaActivity.kt (ambil komentar baris 69-124)-->
+
+<!--    // Langkah 8: Tab 3 Tentang-->
+<!--    // Target: fragment_tentang.xml -> Buka: fragment_tutorial2.xml (ambil komentar baris 49-120)-->
+<!--    // Target: TentangFragment.kt -> Buka: Home/pertemuan_5/WebViewActivity.kt (ambil komentar baris 62-102)-->

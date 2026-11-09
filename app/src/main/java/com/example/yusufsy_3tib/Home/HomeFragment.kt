@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.yusufsy_3tib.Home.pertemuan_10.TenthActivity
 import com.example.yusufsy_3tib.Home.pertemuan_5.LimaActivity
 import com.example.yusufsy_3tib.Home.pertemuan_9.NinthActivity
 import com.example.yusufsy_3tib.LoginActivity
@@ -73,6 +74,9 @@ class HomeFragment : Fragment() {
 
         binding.btnToNinth.setOnClickListener {
             startActivity(Intent(requireContext(), NinthActivity::class.java))
+        }
+        binding.btnToTenth.setOnClickListener {
+            startActivity(Intent(requireContext(), TenthActivity::class.java))
         }
     }
 

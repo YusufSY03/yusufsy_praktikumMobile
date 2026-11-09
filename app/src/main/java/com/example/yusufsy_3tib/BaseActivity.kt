@@ -15,12 +15,21 @@ import com.example.yusufsy_3tib.databinding.ActivityBaseBinding
 class BaseActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityBaseBinding
+//    private var isSelesaiLoading = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+//        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityBaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
+//        splashScreen.setKeepOnScreenCondition {
+//            !isSelesaiLoading
+//        }
+//        lifecycleScope.launch {
+//            delay(2000)
+//            isSelesaiLoading = true
+//        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -28,6 +37,7 @@ class BaseActivity : AppCompatActivity() {
             insets
         }
         replaceFragment(HomeFragment())
+        //
         binding.bottomNavView.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
@@ -42,9 +52,12 @@ class BaseActivity : AppCompatActivity() {
                     replaceFragment(MoreFragment())
                     true
                 }
-                else -> false // false jika item tidak dikenal
+                else -> false
             }
         }
+//        if (savedInstanceState == null) {
+//            binding.bottomNav.selectedItemId = R.id.ringkasan
+//        }
     }
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()

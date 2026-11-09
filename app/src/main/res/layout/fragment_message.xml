@@ -29,3 +29,117 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/ruangkarya_background"-->
+<!--android:orientation="vertical"-->
+<!--android:padding="16dp">-->
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginBottom="16dp"-->
+<!--    android:text="@string/title_ringkasan"-->
+<!--    android:textColor="@color/ruangkarya_text"-->
+<!--    android:textSize="24sp"-->
+<!--    android:textStyle="bold" />-->
+
+<!--&lt;!&ndash; Kartu Termurah &ndash;&gt;-->
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginBottom="16dp"-->
+<!--    app:cardBackgroundColor="@color/ruangkarya_accent"-->
+<!--    app:cardCornerRadius="10dp"-->
+<!--    app:cardElevation="0dp">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/label_termurah"-->
+<!--            android:textColor="@color/ruangkarya_primary"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTermurah"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="-"-->
+<!--            android:textColor="@color/ruangkarya_text"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+<!--</com.google.android.material.card.MaterialCardView>-->
+
+<!--&lt;!&ndash; Kartu Termahal &ndash;&gt;-->
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginBottom="24dp"-->
+<!--    app:cardBackgroundColor="@color/ruangkarya_accent"-->
+<!--    app:cardCornerRadius="10dp"-->
+<!--    app:cardElevation="0dp">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/label_termahal"-->
+<!--            android:textColor="@color/ruangkarya_primary"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTermahal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="-"-->
+<!--            android:textColor="@color/ruangkarya_text"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+<!--</com.google.android.material.card.MaterialCardView>-->
+
+<!--&lt;!&ndash; Bagian Bawah: Lihat Semua Studio &ndash;&gt;-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="@string/title_lihat_semua"-->
+<!--    android:textColor="@color/ruangkarya_text"-->
+<!--    android:textStyle="bold" />-->
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="4dp"-->
+<!--    android:layout_marginBottom="16dp"-->
+<!--    android:text="@string/desc_lihat_semua"-->
+<!--    android:textColor="#666666" />-->
+
+<!--<com.google.android.material.button.MaterialButton-->
+<!--    android:id="@+id/btnLihatDaftar"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="50dp"-->
+<!--    android:backgroundTint="@color/ruangkarya_primary"-->
+<!--    android:text="@string/btn_lihat_daftar"-->
+<!--    android:textAllCaps="false"-->
+<!--    android:textColor="@color/white"-->
+<!--    app:cornerRadius="8dp" />-->
+
+<!--</LinearLayout>-->

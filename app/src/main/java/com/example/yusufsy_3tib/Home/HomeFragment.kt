@@ -85,3 +85,56 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 }
+
+//package com.example.ruangkarya
+//
+//import android.os.Bundle
+//import android.view.LayoutInflater
+//import android.view.View
+//import android.view.ViewGroup
+//import androidx.fragment.app.Fragment
+//import com.example.ruangkarya.databinding.FragmentRingkasanBinding
+//import com.google.android.material.bottomnavigation.BottomNavigationView
+//
+//class RingkasanFragment : Fragment() {
+//
+//    private var _binding: FragmentRingkasanBinding? = null
+//    private val binding get() = _binding!!
+//
+//    override fun onCreateView(
+//        inflater: LayoutInflater, container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View {
+//        _binding = FragmentRingkasanBinding.inflate(inflater, container, false)
+//        return binding.root
+//    }
+//
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        // 1. Hitung Studio Termurah & Termahal langsung dari daftarStudio
+//        val termurah = daftarStudio.minByOrNull { it.tarif }
+//        val termahal = daftarStudio.maxByOrNull { it.tarif }
+//
+//        termurah?.let {
+//            val hargaFormat = "Rp" + String.format("%,d", it.tarif).replace(',', '.') + " / jam"
+//            binding.tvTermurah.text = "${it.nama}\n$hargaFormat"
+//        }
+//
+//        termahal?.let {
+//            val hargaFormat = "Rp" + String.format("%,d", it.tarif).replace(',', '.') + " / jam"
+//            binding.tvTermahal.text = "${it.nama}\n$hargaFormat"
+//        }
+//
+//        // 2. Tombol Lihat Daftar -> Pindahkan tab BottomNav ke tab studio
+//        binding.btnLihatDaftar.setOnClickListener {
+//            val bottomNav = requireActivity().findViewById<BottomNavigationView>(R.id.bottomNav)
+//            bottomNav.selectedItemId = R.id.studio
+//        }
+//    }
+//
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        _binding = null
+//    }
+//}

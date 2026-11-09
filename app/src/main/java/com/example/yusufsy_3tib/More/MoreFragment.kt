@@ -65,3 +65,47 @@ class MoreFragment : Fragment() {
         _binding = null
     }
 }
+
+//package com.example.ruangkarya
+//
+//import android.os.Bundle
+//import android.view.LayoutInflater
+//import android.view.View
+//import android.view.ViewGroup
+//import androidx.fragment.app.Fragment
+//import com.example.ruangkarya.databinding.FragmentInformasiBinding
+//import com.google.android.material.snackbar.Snackbar
+//
+//class InformasiFragment : Fragment() {
+//
+//    private var _binding: FragmentInformasiBinding? = null
+//    private val binding get() = _binding!!
+//
+//    override fun onCreateView(
+//        inflater: LayoutInflater, container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View {
+//        _binding = FragmentInformasiBinding.inflate(inflater, container, false)
+//        return binding.root
+//    }
+//
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        // Klik tombol Hubungi Admin -> Munculkan Snackbar dengan aksi "OK"
+//        binding.btnHubungiAdmin.setOnClickListener {
+//            Snackbar.make(
+//                binding.root,
+//                getString(R.string.pesan_snackbar_admin),
+//                Snackbar.LENGTH_LONG
+//            ).setAction(getString(R.string.aksi_ok)) {
+//                // Saat tombol OK diklik, Snackbar langsung otomatis hilang
+//            }.show()
+//        }
+//    }
+//
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        _binding = null
+//    }
+//}

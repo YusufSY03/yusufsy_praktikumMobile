@@ -65,6 +65,60 @@ class LimaActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }
-
-
 }
+//package com.example.kopiko
+//
+//import android.os.Bundle
+//import android.view.LayoutInflater
+//import android.view.View
+//import android.view.ViewGroup
+//import android.widget.Toast
+//import androidx.fragment.app.Fragment
+//import com.example.kopiko.databinding.FragmentPromoBinding
+//import com.google.android.material.snackbar.Snackbar
+//
+//class PromoFragment : Fragment() {
+//
+//    private var _binding: FragmentPromoBinding? = null
+//    private val binding get() = _binding!!
+//
+//    override fun onCreateView(
+//        inflater: LayoutInflater, container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View {
+//        _binding = FragmentPromoBinding.inflate(inflater, container, false)
+//        return binding.root
+//    }
+//
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        // Fungsi bantuan memunculkan Snackbar aksi BATAL
+//        fun tampilkanSnackbarPromo(namaPromo: String) {
+//            Snackbar.make(
+//                binding.root,
+//                "Promo $namaPromo digunakan",
+//                Snackbar.LENGTH_LONG
+//            ).setAction(getString(R.string.aksi_batal)) {
+//                Toast.makeText(
+//                    requireContext(),
+//                    getString(R.string.toast_promo_dibatalkan),
+//                    Toast.LENGTH_SHORT
+//                ).show()
+//            }.show()
+//        }
+//
+//        binding.btnPakaiPromo1.setOnClickListener {
+//            tampilkanSnackbarPromo("Pagi Hemat")
+//        }
+//
+//        binding.btnPakaiPromo2.setOnClickListener {
+//            tampilkanSnackbarPromo("Beli 2 Gratis 1")
+//        }
+//    }
+//
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        _binding = null
+//    }
+//}

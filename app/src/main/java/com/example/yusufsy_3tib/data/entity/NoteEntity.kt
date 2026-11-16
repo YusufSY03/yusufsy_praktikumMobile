@@ -1,5 +1,6 @@
 package com.example.yusufsy_3tib.data.entity
 
+import androidx.room.ColumnInfo // BARU
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -9,5 +10,7 @@ data class NoteEntity(
     val id: Int = 0,
     val title: String,
     val content: String,
-    val createdAt: Long = System.currentTimeMillis()
+    val createdAt: Long = System.currentTimeMillis(), // DIUBAH: diakhiri koma
+    @ColumnInfo(defaultValue = "0") // BARU
+    val isPinned: Boolean = false // BARU
 )
